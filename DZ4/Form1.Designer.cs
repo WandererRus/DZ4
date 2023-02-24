@@ -33,6 +33,7 @@
             this.progressBar3 = new System.Windows.Forms.ProgressBar();
             this.progressBar4 = new System.Windows.Forms.ProgressBar();
             this.progressBar5 = new System.Windows.Forms.ProgressBar();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // progressBar1
@@ -70,11 +71,22 @@
             this.progressBar5.Size = new System.Drawing.Size(776, 23);
             this.progressBar5.TabIndex = 4;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(344, 214);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "Показать результаты";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 376);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.progressBar5);
             this.Controls.Add(this.progressBar4);
             this.Controls.Add(this.progressBar3);
@@ -95,5 +107,6 @@
         private ProgressBar progressBar3;
         private ProgressBar progressBar4;
         private ProgressBar progressBar5;
+        private Button button1;
     }
 }
